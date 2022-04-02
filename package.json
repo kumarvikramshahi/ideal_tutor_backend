@@ -1,0 +1,24 @@
+{
+  "name": "ideal_tutor_backend",
+  "version": "1.0.0",
+  "description": "ideal_tutor_backend",
+  "main": "Index.js",
+  "scripts": {
+    "build": "node build",
+    "start": "node server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "nodemon server/server.js"
+  },
+  "author": "KVM",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
+    "express-validator": "^6.13.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^4.2.2",
+    "mongoose": "^6.0.15",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15"
+  }
+}
