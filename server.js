@@ -5,17 +5,17 @@ const morgan = require('morgan');
 // const helmet = require('helmet');
 // const path = require('path');
 
-const { DATABASE_CONNECTION_STRING } = require('../utils/constants');
+const { DATABASE_CONNECTION_STRING } = require('./utils/constants');
 
 const PORT = process.env.PORT || 8080;
 
 const app = express();
 
 // File imports
-const { ErrorMiddleware } = require('../common/Errors');
-const teacher = require('../routes/Teacher');
-const student = require('../routes/Student');
-const auth = require('../routes/Auth');
+const { ErrorMiddleware } = require('./common/Errors');
+const teacher = require('./routes/Teacher');
+const student = require('./routes/Student');
+const auth = require('./routes/Auth');
 
 // Parsers and CORS
 app.use(bodyParser.json());

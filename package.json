@@ -2,12 +2,12 @@
   "name": "ideal_tutor_backend",
   "version": "1.0.0",
   "description": "ideal_tutor_backend",
-  "main": "Index.js",
+  "main": "server.js",
   "scripts": {
     "build": "node build",
-    "start": "node server/server.js",
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:dev": "nodemon server/server.js"
+    "start:dev": "nodemon server.js"
   },
   "author": "KVM",
   "license": "ISC",
@@ -18,7 +18,9 @@
     "jsonwebtoken": "^8.5.1",
     "mongodb": "^4.2.2",
     "mongoose": "^6.0.15",
-    "morgan": "^1.10.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
     "nodemon": "^2.0.15"
   }
 }
